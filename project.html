@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        div:not(.fixed,.absolute,.sticky,.relative){
+            margin: 30px;
+            border: 3px solid lavenderblush;
+            background-color: bisque;
+            border-radius: 30%;
+        }
+        .static{
+            color:blue;
+            position: static;
+        }
+        .fixed{
+            color: darkslateblue;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            background-color: darkturquoise;
+            opacity: 0.8;
+        }
+        .relative{
+            left: 40px;
+            right: 40px;
+            border: 30px dashed lavender;
+            position: relative;
+        }
+        .absolute{
+            position: absolute;
+            background-color: coral;
+            border-radius: 90%;
+            opacity: 0.85;
+            left: 200px;
+        }
+        .sticky{
+            position: sticky;
+            top:10px;
+            background-color: darksalmon;
+            border: 6px solid mediumvioletred;
+            border-radius: 20%;
+            text-align: center;
+        }
+        h2{
+            color: lavenderblush;
+            background-color: navy;
+            text-align: center;
+        }
+        button{
+            height: 200px;
+            background-color: crimson;
+            padding: 10px;
+            margin: 30px;
+        }
+     .first:hover{
+            opacity: 0.5;
+        }
+        .second:hover{
+            opacity: 0.5;
+            background-color: aliceblue;
+        }
+        .third:hover{
+            opacity: 0.3;
+            background-color: cyan;
+            color: crimson;
+        }
+        img{
+            border-radius: 50%;
+            scale:0.9
+        }
+    </style>
+</head>
+<body>
+    <h2>Project positioning and opacity on CSS</h2>
+    <div class="static">This is static positioning.</div>
+    <div></div>
+    <div></div>
+    <div class="fixed">This is fixed positioning</div>
+    <div class="relative">This is relative positioning!</div><br>
+    <div class="absolute">Absolute positioning!</div>
+    <br>
+    
+    <br>
+    <div class="sticky">Learn more about rabbits!</div>
+    <img src="https://th.bing.com/th?id=OSK.HEROSC3vX71kU6SGL1dJSr1adThrm1DSYiFXUef2aBBaUZk&w=312&h=200&c=15&rs=2&o=6&dpr=1.5&pid=SANGAM">
+        <pre>Rabbits are ground dwellers that live in environments ranging from desert to tropical forest and
+        The long ears of rabbits are most likely an adaptation for detecting predators. In addition to 
+        their prominent ears, which can measure up to 6 cm (more than 2 inches) long, rabbits have long, powerful hind legs and a short tail.</pre>
+    
+    <br><br>
+    <button class="first">
+        Hover to change opacity!
+    </button>
+    <button class="second">
+        Hover to change opacity
+        <br>
+        and background-color!
+    </button>
+    <button class="third">
+        Hover to change opacity
+        <br>
+        and background-color!
+    </button>
+   
+</body>
+</html>
